@@ -1,0 +1,53 @@
+:root{
+    --pomme:#70B77E;
+    --sapin:#065143;
+    --azur:#129490;
+    --creme:#F7F1F1;
+    --dark:#3C3636;
+ }
+
+body{
+    background-color:var(--creme);
+    /* font-family */
+}
+.to-do-list{
+    margin: auto;
+    width:700px;
+    padding:10px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    color:var(--dark)
+}
+.ajout{
+    background-color: var(--sapin);
+    padding:5px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+#new-task-form{
+    background-color: var(--pomme);
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+
+#tasks{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+}
+
+

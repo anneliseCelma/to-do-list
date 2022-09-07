@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" media="screen" href="css/ToDoList.css">
+    <script type="text/javascript" src="fichier.js"> </script>
+</head>
+<body>
+    <div class="to-do-list">
+    <!-- Header -->
+    <header class="ajout">
+    <h1>Task for you to not forget !</h1>
+    <form id="new-task-form">
+        <input type="text" id="new-task-input"placeholder="Ajoutez une tache">
+        <button type="submit" name="valider" value="chercher"><i class="bi bi-plus-circle"></i></button>
+    </form>
+    </header>
+    <!-- Header fin -->
+
+    <!-- Main -->
+    <main>
+        <section>
+    <h2>Tasks</h2>
+    <div id="tasks">
+      <input type="text" class="text">
+
+        <div class="actions">  
+        <button class="edit"><i class="bi bi-pencil-fill"></i>
+        </button>
+        <button class="delete"><i class="bi bi-trash3-fill"></i></button>
+        </div>
+
+    </div>
+    </section>
+    </main>
+    <!-- Main end -->
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
