@@ -1,0 +1,187 @@
+:root{
+    --pomme:#70B77E;
+    --sapin:#065143;
+    --azur:#129490;
+    --creme:#F7F6F6;
+    --grey:#D0CCCB;
+    --dark:#3C3636;
+    --orange:#DD4C16;
+ }
+
+ @font-face {
+    font-family:'Roboto-Bold';
+    font-weight:200px;
+    src:url('/App/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+body{
+    background-color:var(--creme);
+  
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto-Bold';
+
+    
+}
+
+
+header{
+    background: url("/App/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 5% 75%;    
+    height:200px;
+    padding: 10px;
+}
+.ajout{
+    width:700px;
+    padding:10px;
+    margin: auto;
+
+}
+
+ .encadre{
+    margin-left:20%;
+    margin-top:-40px;
+    width:700px;
+    padding:10px;
+    position: absolute;
+} 
+
+
+
+
+#new-task-form{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
+
+input, button{
+    appearance: none;
+    border: none;
+}
+
+input:focus, button:focus{
+    outline:  none;
+}
+
+#new-task-input{
+    background-color: white;
+    padding:0.5rem;
+
+}
+
+
+#new-task-input::placeholder{
+      color:var(--dark);
+      /* faudra pt etre changer la couleur c moche gro */ 
+}
+#new-task-submit{
+    color:var(--creme);
+    background-color: var(--orange);
+    font-size: 1.65rem;
+    background-image: linear-gradient(to right, var(--orange),    var(--creme));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    transition:0.4s ;
+}
+#new-task-submit:hover{
+    opacity: 0.8;
+}
+
+#new-task-submit:active{
+    opacity: 0.6;
+}
+
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 3px 5px 5px  var(--grey);
+
+    
+}
+
+#tasks .task .content{
+flex: 1 1 0%;
+}
+
+#tasks .task .content .text{
+    background-color: white;
+    color: var(--dark);
+    font-size: 1.125rem;
+    width:100%;
+    display: block;
+    transition: 0.4s;
+}
+
+
+/* Si ce n'est pas sur readonly mettre le texte en orange en gros indicateur de si le texte est modifiable ou non */
+#tasks .task .content .text:not(:read-only){ 
+    color: var(--orange);
+
+}
+
+.task .actions button{
+    cursor:pointer;
+    margin:0 0.5rem;
+    font-size:700;
+    text-transform: uppercase;
+    transition:0.4s;
+  
+}
+
+.task .actions button:hover{
+    opacity: 0.8;
+}
+
+.task .actions button:active{
+    opacity: 0.6;
+}
+
+.task .actions .edit{
+    background-color: var(--orange);
+    background-image: linear-gradient(to right, var(--orange),    var(--pomme));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete{
+    background-color: #DD4C16;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
